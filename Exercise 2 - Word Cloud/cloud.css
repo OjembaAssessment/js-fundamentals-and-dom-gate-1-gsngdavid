@@ -1,4 +1,63 @@
 #myWordCloud {
-    color: red;
+    display: grid;
+}
+
+.word1 {
+    color: #148f69;
     font-size: 64px;
+}
+
+.word2 {
+    color: #843aa0;
+    font-size: 60px;
+}
+
+.word3 {
+    color: #5dda77;
+    font-size: 56px;
+}
+
+.word4 {
+    color: #257ad0;
+    font-size: 52px;
+}
+
+.word5 {
+    color: #e17eec;
+    font-size: 48px;
+}
+
+.word6 {
+    color: #d33e49;
+    font-size: 44px;
+}
+
+.word7 {
+    color: #ae68fb;
+    font-size: 40px;
+}
+
+.word8 {
+    color: #447db1;
+    font-size: 36px;
+}
+
+.word9 {
+    color: #0a1625;
+    font-size: 32px;
+}
+
+.word10 {
+    color: #f7c174;
+    font-size: 28px;
+}
+
+.word11 {
+    color: #bded8d;
+    font-size: 24px;
+}
+
+.word12 {
+    color: #7f32fc;
+    font-size: 24px;
 }
