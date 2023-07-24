@@ -18,6 +18,7 @@ function topTwelveWords(text) {
 }
 
 const topTwelve = topTwelveWords(paragraph.textContent);
+console.log(topTwelve);
 
 const fragment = document.createDocumentFragment();
 

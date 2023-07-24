@@ -1,63 +1,102 @@
 #myWordCloud {
     display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+    grid-template: 
+    '. . . word2 word1 word1 word1 word1'
+    'word3 word3 word3 word2 word5 word7 word8 word12'
+    '. word11 word10 word2 word5 word7 word8 word9     '
+    '. . word10 word2 word6 word7 word8 word9'
+    '. . word10 word2 word4 word7 word8 word9'
+    '. . . word2 . . word8 .';
+}
+
+#myWordCloud :nth-child(3n) {
+    /* writing-mode: vertical-lr; */
 }
 
 .word1 {
     color: #148f69;
     font-size: 64px;
+    grid-area: word1;
+    border: 1px solid red;
 }
 
 .word2 {
     color: #843aa0;
     font-size: 60px;
+    grid-area: word2;
+    border: 1px solid red;
+    writing-mode: vertical-lr;
 }
 
 .word3 {
     color: #5dda77;
     font-size: 56px;
+    grid-area: word3;
+    border: 1px solid red;
 }
 
 .word4 {
     color: #257ad0;
     font-size: 52px;
+    grid-area: word4;
+    border: 1px solid red;
 }
 
 .word5 {
     color: #e17eec;
     font-size: 48px;
+    grid-area: word5;
+    border: 1px solid red;
 }
 
 .word6 {
     color: #d33e49;
     font-size: 44px;
+    grid-area: word6;
+    border: 1px solid red;
 }
 
 .word7 {
     color: #ae68fb;
     font-size: 40px;
+    grid-area: word7;
+    border: 1px solid red;
 }
 
 .word8 {
     color: #447db1;
     font-size: 36px;
+    grid-area: word8;
+    border: 1px solid red;
 }
 
 .word9 {
     color: #0a1625;
     font-size: 32px;
+    grid-area: word9;
+    border: 1px solid red;
 }
 
 .word10 {
     color: #f7c174;
     font-size: 28px;
+    grid-area: word10;
+    border: 1px solid red;
 }
 
 .word11 {
     color: #bded8d;
     font-size: 24px;
+    grid-area: word11;
+    border: 1px solid red;
 }
 
 .word12 {
     color: #7f32fc;
     font-size: 24px;
+    grid-area: word12;
+    border: 1px solid red;
 }
