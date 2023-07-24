@@ -10,19 +10,24 @@ let isCounting = false;
 let actionsAllowed = true;
 
 const timer = setInterval(() => {
-    if(seconds === 0) resetHandler();
+    if(seconds === 0) {
+        isCounting = false;
+        resetHandler();
+    }
     if(isCounting) result.textContent = `${--seconds}s`;
 }, 1000);
 
 function countDownHandler(newIsCounting) {
-    if(seconds === 0) return;
+    if(seconds <= 0) return resetHandler();
     if(!timer) timer();
     isCounting = newIsCounting;
+    AddSubtractTimer.forEach(btn => btn.classList.toggle('active'));
+    reset.classList.toggle('active');
     toggle.innerText = !isCounting ? "Start" : "Stop";
 }
 
 function resetHandler() {
-    isCounting = false;
+    if(isCounting) return
     result.textContent = `${seconds = 0}s`;
     toggle.innerText = 'Start';
 }
